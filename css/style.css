@@ -1,3 +1,8 @@
+.Nav-bar{
+    font-family: 'Inter', sans-serif;
+    padding:1rem;
+}
+
 body model-viewer{
     width:auto;
     height: 600px;
@@ -7,9 +12,14 @@ body model-viewer{
 }
 
 .header{
-padding:1rem;
-height:1000px;
-background-image: url(../assets/hero_image.jpg);
-background-repeat: no-repeat, repeat;
-
+    font-family: 'Inter', sans-serif;
+    color:white;
+    text-align: center;
+    padding:2rem;
+    height:800px;
+    background:linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0.096)), url(../assets/hero_image.jpg);
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    background-attachment: fixed;
 }
