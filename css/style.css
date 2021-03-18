@@ -4,11 +4,11 @@
 }
 
 body model-viewer{
+    padding:2rem;
     width:auto;
     height: 600px;
     margin-top:100px;
-    border: grey solid 1pt;
-    
+    background-color: aliceblue;
 }
 
 .header{
@@ -23,3 +23,11 @@ body model-viewer{
     background-size: cover;
     background-attachment: fixed;
 }
+.clickMap{
+    margin: 2rem;
+}
+ #mapClick{
+background-color: aliceblue;     
+text-align: center;
+padding: 2rem;
+ }
