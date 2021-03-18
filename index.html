@@ -35,7 +35,7 @@
 
         <div class=header id="hero">
             
-                <p><h1 class="display-4">Hi,welcome to the unofficial webapp of </h1></p>
+                <p><h1 class="display-4">Hi,welcome to the unofficial webpage of </h1></p>
                 <p><h1 class="display-2">The University of Limerick </h1></p>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, .</p>
                
@@ -78,14 +78,15 @@
                 console.log("Geo location not supported")
             }
         }
+
         function showPosition(position){
             lat= position.coords.latitude 
             lon=position.coords.longitude
             drawMap()
         }
+
         function drawMap(){
             let map= L.map('map').setView({lon: lon, lat:lat}, 2)
-
             L.tilelayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
             maxZoom:19,
             attribution:'&copy;<a href="https://www.openstreetmap.org/copyright">OSM contributors</a>'
