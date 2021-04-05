@@ -2,6 +2,7 @@ body{
   background-color: white;
 }
 #Nav{
+  padding-left: 10%;
   background-color: white;
   box-shadow: black;
 }
@@ -10,8 +11,8 @@ body{
 
   padding-left: 10%;
   padding-right: 10%;
-  margin-bottom: 10%;
-  margin-top:10%;
+  margin-bottom: 2%;
+  margin-top:2%;
 }
 
 #hero-image{
@@ -22,6 +23,8 @@ body{
 
 .timeline{
 padding-top: 10%;
+margin-left: 10%;
+margin-right: 10%;
 }
 
 .timeline .col-lg-4 {
@@ -50,10 +53,14 @@ padding-top: 10%;
 }
 
 #brown-logo{
-  background-size: cover;
+  background-size:contain;
   width: auto;
   height: auto;
   
+}
+
+#brownThomas {
+  padding:2%;
 }
 
 #map-logo{
