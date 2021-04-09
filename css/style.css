@@ -116,7 +116,7 @@ model-viewer {
 #ar-button {
   background-image: url(/assets/2x/baseline_view_in_ar_black_24dp.png);
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 48px 48px;
   background-position: 12px 50%;
   background-color: #fff;
   position: absolute;
@@ -144,4 +144,32 @@ model-viewer {
 
 #ar-button:focus-visible {
   outline: 1px solid #4285f4;
+}
+
+#playbutton{
+  position: absolute;
+  background:white;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 16px;
+  padding: 0px 16px 0px 16px;
+  font-size: 14px;
+  color:#4285f4;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+
+}
+
+#playbutton:focus-visible {
+  outline: 1px solid #4285f4;
+}
+
+#playbutton :focus {
+  outline: none;
+}
+
+#playbutton :active {
+  background-color: #E8EAED;
 }
