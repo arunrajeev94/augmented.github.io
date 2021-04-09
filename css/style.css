@@ -4,7 +4,12 @@ body{
 #Nav{
   padding-left: 10%;
   background-color: white;
-  box-shadow: black;
+  box-shadow: 0 2px 20px #cfd8dc;
+}
+
+.navbar-brand :hover  {
+  transform: rotate(1turn);
+  transition: all 1s ease-in-out;
 }
 
 .hero{
@@ -44,29 +49,36 @@ margin-right: 10%;
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -.05rem;
-}
+
 
 #brown-logo{
+  margin:2rem;
   background-size:contain;
   width: auto;
   height: auto;
-  
+  box-shadow: 0 2px 20px #cfd8dc;
 }
 
-#brownThomas {
-  padding:2%;
+.logo :hover #brown-logo,.logo :active #brown-logo  {
+  background-size:contain;
+  box-shadow: 0px 16px 30px #b0bec5;
+   transition: all 1s ease-in-out;
+ 
 }
+
 
 #map-logo{
+  margin:2rem;
   background-size: cover;
   width: auto;
   height: auto;
+  box-shadow: 0 2px 20px #cfd8dc;
+}
+
+.logo :hover #mapLogo, .logo :active #mapLogo {
+  background-size:contain;
+  box-shadow: 0px 16px 30px #b0bec5;
+   transition: all 1s ease-in-out;
   
 }
 
@@ -79,4 +91,20 @@ model-viewer {
   --poster-color: #eee;
   width:auto;
   height:600px;
+}
+
+#error {
+  background-color: #ffffffdd;
+  border-radius: 16px;
+  padding: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 0.3s;
+}
+#error.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s, opacity 1s 1s;
 }
