@@ -40,17 +40,10 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 ">
                         <model-viewer id="brownThomas"  src="assets\brown thomas.glb" ar ar-modes="scene-viewer webxr" ar-scale="auto" camera-controls alt="3D model of Brown Thomas"skybox-image="assets\environment.hdr" >
-
-                            <button slot="ar-button" id="ar-button">
-                                              </button>
-
-                                            
-                                                <div class="playbutton" id="playbutton" onclick="playanimation()">play/pause
+                              
+                          <div class="playbutton" id="playbutton" onclick="playanimation()">start/stop animation
                                                 </div>
-                                              
-                             
-
-                                    </model-viewer>
+                        </model-viewer>
                     </div>
                 </div>
             </div>
@@ -59,7 +52,7 @@
         
        
         <script>
-        const modelViewer = document.querySelector('#brownThomas');
+        const modelViewer = document.querySelector('model-viewer');
         function playanimation()
         {
           if(modelViewer.paused)
@@ -70,8 +63,7 @@
         </script>
 
 <script >
-  const modelViewer = document.querySelector("model-viewer");
-  document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
+ document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
     // Keep slider interactions from affecting the XR scene.
     ev.preventDefault();
   });
