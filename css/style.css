@@ -19,7 +19,7 @@ html, body{
  }
 
 #animation{
-  animation: 3s ease-out  fadeIn;
+  animation: 1s ease-out  fadeIn;
 }
 /* End Global */
 
@@ -73,7 +73,7 @@ html, body{
   padding-left:10%;
   padding-right:10%;
   padding-bottom:5%; 
-  animation: 3s ease-out  fadeIn; 
+  animation: 1s ease-out  fadeIn; 
 }
 
 #header-content h1{
@@ -85,7 +85,7 @@ html, body{
   padding-bottom:2%; 
   padding-left:10%; 
   padding-right:10%;
-  animation: 3s ease-out fadeIn;
+  animation: 1s ease-out fadeIn;
   }
 
 #history-Img{
@@ -107,7 +107,7 @@ html, body{
   margin-bottom: 10%;
   padding-right: 10%;
   padding-left: 10%;
-  animation: 3s ease-out 0s 1 fadeIn;
+  animation:1s ease-out 0s 1 fadeIn;
 }
 
 #timeline h2 {
@@ -127,13 +127,13 @@ html, body{
 
 .featurette-divider {
   margin: 5rem 0; 
-  animation: 3s ease-out  fadeIn; 
+  animation: 1s ease-out  fadeIn; 
 }
 
 #main-content{
   padding-right: 10%;
   padding-left: 10%;
-  animation: 3s ease-out  fadeIn; 
+  animation: 1s ease-out  fadeIn; 
 }
 
 #main-content h2{
@@ -188,7 +188,7 @@ model-viewer {
   overflow-x: hidden;
   width:auto;
   height:30rem;
-  animation: 3s ease-out  fadeIn; 
+  animation: 1s ease-out  fadeIn; 
 }
 
 .model-box{
