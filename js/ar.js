@@ -6663,7 +6663,7 @@ ARjs.SessionDebugUI = function(arSession, tangoPointCloud){
 	this.domElement.style.backgroundColor = 'rgba(127,127,127,0.5)'
 	this.domElement.style.display = 'inline-block'
 	this.domElement.style.padding = '0.5em'
-	this.domElement.style.margin = '0.5em'
+	this.domElement.style.margin = '3rem'
 	this.domElement.style.textAlign = 'left'
 
 	//////////////////////////////////////////////////////////////////////////////
