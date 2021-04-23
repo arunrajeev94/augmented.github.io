@@ -70,11 +70,11 @@ function initialize()
 
 	function onResize()
 	{
-		arToolkitSource.onResize()	
-		arToolkitSource.copySizeTo(renderer.domElement)	
+		arToolkitSource.onResizeElement()	
+		arToolkitSource.copyElementSizeTo(renderer.domElement)	
 		if ( arToolkitContext.arController !== null )
 		{
-			arToolkitSource.copySizeTo(arToolkitContext.arController.canvas)	
+			arToolkitSource.copyElementSizeTo(arToolkitContext.arController.canvas)	
 		}	
 	}
 
@@ -136,7 +136,7 @@ function initialize()
 	// material for portal (for debugging)
 	
 	let defaultMaterial = new THREE.MeshBasicMaterial({
-		map: loader.load("images/sphere-colored.png"), 
+		map: loader.load("assets/sphere-colored.png"), 
 		color: 0x444444,
 		side: THREE.DoubleSide,
 		transparent: true,
