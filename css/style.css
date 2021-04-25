@@ -1,4 +1,5 @@
 /* Start Global */
+/* Fade Animation */
 @keyframes fadeIn {
   0% {
    opacity: 0;
@@ -55,8 +56,6 @@ html, body{
 
 :hover #Nav .active {
   color: #00bcd4;
-  
-
 }
 
 #Nav :hover{
@@ -182,7 +181,7 @@ mix-blend-mode: multiply;
 /* End Body */
 
 
-/* Start model viewer  */
+/* Start model viewer */
 model-viewer {
   background-color: #fafafa;
   overflow-x: hidden;
@@ -248,7 +247,7 @@ model-viewer {
 
 
 
-/* Start Footer */
+/* Start Portal section*/
 
 #portal-animation{
   padding-right: 10%;
@@ -271,6 +270,7 @@ model-viewer {
  transform: translateY(-200%);
   font-size: 16px;
 }
+/* End Portal section*/
 
 /* Start Footer */
 .footeruL{
@@ -289,11 +289,6 @@ margin-right: auto;
 size: 50%;
  
 }
-
-
-
-
-
   /* End Footer */
 
 
