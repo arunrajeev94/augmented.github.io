@@ -31,7 +31,7 @@ html, body{
 /* Start Navbar */
 
 .Hero{
-  background-image:url(/assets/bg_2.png);
+  background-image:url(../assets/bg_2.png);
   min-height: 600px;
   max-height: 800px;
   background-attachment: fixed;
