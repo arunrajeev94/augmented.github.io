@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UL webapp</title>
+  <title>3D Campus</title>
 
-<!-- Bootstrap   -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-<!-- Google fonts  -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 <!-- CSS  -->
-  <link href="./css/style.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
+
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <!-- Model Viewer -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -23,92 +24,102 @@
 
 <body>
 
-<!--Start Navbar  -->
+  <!--Start Navbar  -->
 
-  <nav class="navbar navbar-expand-lg navbar-light " id="Nav">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand mx-auto" href="#"><img src="assets/logo_unofficial.svg"></a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">3D Map</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="brown_thomas.html">Brown Thomas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Portalview.html">Portal View</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="https://www.ul.ie/"target="_blank">UL official</a>
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-light" id="Navlight">
+    <div class="Nav container ">
+      <a class="navbar-brand d-none d-md-block" href="index.html"><img src="/assets/UL_Logo_dark.svg"></a>
+      <div class="float-sm-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">3D Campus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="brown_thomas.html">Brown Thomas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Portalview.html">Portal View</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
-<!--End Navbar  -->
+  <!--End Navbar  -->
 
-<!--Start Model Viewer  -->
+  <!--Start Model Viewer  -->
 
-    <div class="container-fluid" >
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 " >
-          <div class="model-box">
-          <model-viewer id="ulMap "  src="assets/ulMap.glb" ar ar-modes="scene-viewer webxr" camera-controls
+  <div class="container ">
+    <div class="row d-flex justify-content-center  ">
+      <div class="col-lg-10 col-md-10 col-sm-12 ">
+        <h3 class="pt-5">Get to Know the Campus!</h3>
+        <div class="model-box ">
+          <model-viewer id="ulMap " src="assets/ulMap.glb" ar ar-modes="scene-viewer webxr" camera-controls
             alt="3D model of UL ">
-            <button type="button" id="playbutton" class="btn btn-primary btn-lg" onclick="playanimation()">Animate</button>
-          </div>
+          </model-viewer>
         </div>
-        </model-viewer>
+        <div class="d-flex justify-content-center pt-3">
+          <button type="button" id="playbutton" class="btn btn-dark px-5 align-self-center " onclick="playanimation()">Play</button>
+        </div>
       </div>
     </div>
-  
+  </div>
 
-<!--End Model Viewer  -->
 
-<!--Start Instructions-->
+  <!--End Model Viewer  -->
 
-<div class="Instructions">
-  <div class="container-fluid">
-    <div class="col-lg-12 col-md-12 col-sm-12 " >
-      <h2 class="featurette-heading">Some basic steps before getting started </h2>
-      <p>Press the "Animate" button to Start or Stop the model animation.</p>
-      <p>Augmented Reality is currently only supported on an Android device click the  <img src="assets/AR.svg"> button to enter AR mode. </p>
-      <p>Pinch to zoom in and zoom out on an Android device or use the mouse wheel on a Laptop or Desktop.</p>
-      <p>Drag with one finger to rotate the model.</p>
-      <p>Press the <img src="assets/circle.svg"> button in the Augmented Reality view to capture a photo, long press to record a video.</p>
+  <!--Start Instructions-->
+
+  <div class="Instructions">
+    <div class="container py-5 d-flex justify-content-center  ">
+      <div class="col-lg-10 col-md-10 col-sm-12 ">
+        <h4 class="py-2">Some basic steps before getting started </h4>
+        <p class="my-3">Press the "Animate" button to Start or Stop the model animation.</p>
+        <p class="my-3">Augmented Reality is currently only supported on an Android device click the <img src="assets/AR.svg"> button
+          to enter AR mode. </p>
+        <p class="my-3">Pinch to zoom in and zoom out on an Android device or use the mouse wheel on a Laptop or Desktop.</p>
+        <p class="my-3">Drag with one finger to rotate the model.</p>
+        <p class="my-3">Press the <img src="assets/circle.svg"> button in the Augmented Reality view to capture a photo, long press
+          to record a video.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!--End Instructions-->
+  <!--End Instructions-->
 
-<!-- Start Footer Section -->
-
-<footer class="footeruL ">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <img class="img-fluid"src="assets/logo_footer.svg">
-
-      <p class="text-center">For all official information please visit <a href="https://www.ul.ie" target="_blank" class="text-decoration-none">Official website of UL.  </p>
+  <!--  Start Footer section -->
+  <footer class="footeruL  ">
+    <div class="container  ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8 col-md-12 col-sm-12 pt-5 d-flex justify-content-center ">
+          <img src="/assets/UL_Logo_light.svg" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-center  p-2">
+          <a href="index.html" class="text-decoration-none link-light p-1">Home</a>
+          <a href="map.html" class="text-decoration-none link-light p-1">3D Campus</a>
+          <a href="brown_thomas.html " class="text-decoration-none link-light p-1">Brown Thomas</a>
+          <a href="Portalview.html" class="text-decoration-none link-light p-1">Portal View</a>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-center ">
+          <p class="text-center">For all official communication and any other information 
+            please visit the<a href="https://www.ul.ie" target="_blank"
+              class="text-decoration-none link-light p-1">Official website of UL. </p>
+        </div>
+      </div>
     </div>
-  </div>
-    
-  </div>
-</footer>
+  </footer>
+  <!--  End Footer section -->
 
-<!-- End Footer Section -->
-
-<!-- Start Javascript functions-->
-<!-- Function for error handling-->
+  <!-- Start Javascript functions-->
+  <!-- Function for error handling-->
   <script>
     document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
       if (event.detail.status === 'failed') {
@@ -120,20 +131,29 @@
       }
     });
   </script>
-<!-- Function for animating the model-->
-<script>
-  const modelViewer = document.querySelector('model-viewer');
-  function playanimation() {
-    if (modelViewer.paused)
-      modelViewer.play()
-    else
-      modelViewer.pause()
-  }
-</script>
-<!-- End Javascript functions-->
+  <!-- Function for animating the model-->
+  <script>
+    const modelViewer = document.querySelector('model-viewer');
+    function playanimation() {
+      var changebtn = document.getElementById("playbutton");
+      if (modelViewer.paused )
+        modelViewer.play()
+      else
+        modelViewer.pause()
+        if(changebtn.innerText=="Play"){
+          changebtn.innerText="Pause"
+        }
+        else
+        {changebtn.innerText="Play"}
+    }
+  </script>
+  <!-- End Javascript functions-->
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script></body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>

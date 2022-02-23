@@ -10,194 +10,100 @@
 }
 
 html, body{
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size:16px;
-  color: #212121;
-  background-color: #fafafa;
-  max-width: 100%;
-  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #646464;
+  padding-bottom: 0px;
+  
  }
 
-#animation{
-  animation: 1s ease-out  fadeIn;
-}
+ h1,h2,h3,h4{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color:#323232;
+  
+ }
+
+
 /* End Global */
 
 /* Start Navbar */
-#Nav{
-  background-color: white;
-  font-family: 'Inter', sans-serif;
+
+.Hero{
+  background-image:url(/assets/bg_2.png);
+  min-height: 600px;
+  max-height: 800px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
+}
+
+#history{
+  color:#323232;
+}
+
+.Nav{
   font-weight: 400;
-  color: #9e9e9e;
   font-size: 16px;
-  width: 100%;
-  box-shadow: 0 2px 20px #cfd8dc;
-  position: relative;
-  white-space: nowrap;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
 }
 
-.navbar-brand :hover  {
-  transform: rotate(1turn);
-  transition: all 1s ease-in-out;
-}
-#Nav .nav-item{
-  padding-left:2%;
-  padding-right:2%;
-  
-}
-
-#Nav .active{
-  color: #00bcd4;
+.Nav .active{
   font-weight: 500;
-  padding-left:2%;
-  padding-right:2%;
+}
+
+#Navlight .active{
+  color: #00A2C7;
+  font-weight: 500;
+}
+
+#Navlight :hover .active{
+  color: #00A2C7;
+  font-weight: 500;
+}
+
+#Navlight :hover{
+  color: #01C0EB;
+}
+
+.Hero  h1 {
+  font-weight: 500; 
+}
+
+.Hero p{
+  font-weight: 400;
+  color: #AAF0FF;
+}
+#history .his_one{
+  background-color: #DBDDDD;
+  font-weight: 400;
+  color: #727272;
+  border-radius: 20px;
+  padding: 3rem;
+
   }
 
-:hover #Nav .active {
-  color: #00bcd4;
+.footeruL{
+  background-color: #292b2c;
+  color: #bbbbbb;
+  font-size: 16px;
+  height:auto;
+  margin-bottom: 0%;
 }
 
-#Nav :hover{
-  color: #00bcd4;
-}
-
-/* End Navbar */
-
-/* Start Header */
-#header-content p{
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size:24px;
-  padding-left:10%;
-  padding-right:10%;
-  padding-bottom:5%; 
-  animation: 1s ease-out  fadeIn; 
-}
-
-#header-content h1{
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size:60px;
-  color: #00bcd4;
-  padding-top:10%; 
-  padding-bottom:2%; 
-  padding-left:10%; 
-  padding-right:10%;
-  animation: 1s ease-out fadeIn;
-  }
-
-#history-Img{
-  background-color: white;
-  padding:4%;
-   width: auto;
-  height: auto;
-  border: lightgray solid 1px;
-  box-shadow: 0 2px 20px #cfd8dc;
-}
-/* End Header */
-
-/* Start Body  */
-
-#timeline{
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  padding-top: 10%;
-  margin-bottom: 10%;
-  padding-right: 10%;
-  padding-left: 10%;
-  animation:1s ease-out 0s 1 fadeIn;
-}
-
-#timeline h2 {
-  font-weight: 600;
-  font-size:40px;
-  color: #00bcd4;
-  padding-top: 10%;
-  padding-bottom: 5%;
-}
-
-#timeline h3 {
-  font-weight: 500;
-  font-size:24px;
-  color: #455a64;
-  padding-bottom: 1%;
-}
-
-.featurette-divider {
-  margin: 5rem 0; 
-  animation: 1s ease-out  fadeIn; 
-}
-
-#main-content{
-  padding-right: 10%;
-  padding-left: 10%;
-  animation: 1s ease-out  fadeIn; 
-}
-
-#main-content h2{
-  font-weight: 600;
-  font-size:40px;
-  color: #00bcd4;
-  padding-top: 10%;
-  padding-bottom: 5%;
-}
-
-
-#brown-logo{
-mix-blend-mode: multiply;
- margin-top: 10% ;
- padding:4%;
- width: auto;
- height: auto;
- border: lightgray solid 1px;
- background-color: white;
- box-shadow: 0 2px 20px #cfd8dc;
- 
-}
-
-#map-logo{
-  mix-blend-mode: multiply;
-  margin-top: 10% ;
-  padding:4%;
-  width: auto;
-  height: auto;
-  border: lightgray solid 1px;
-  box-shadow: 0 2px 20px #cfd8dc;
-  background-color: white;
-   }
-
-#portal-logo{
-  mix-blend-mode: multiply;
-  margin-top: 10% ;
-  padding:4%;
-  width: auto;
- height: auto;
- border: lightgray solid 1px;
- background-color: white;
- box-shadow: 0 2px 20px #cfd8dc;
-}
-
-/* End Body */
-
-
-/* Start model viewer */
 model-viewer {
-  background-color: #fafafa;
+  background-color: #DADADA;
   overflow-x: hidden;
   width:auto;
-  height:30rem;
-  animation: 1s ease-out  fadeIn; 
+  height:400px;
 }
 
 .model-box{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  margin-bottom: 5%;
   background-color: white;
-  padding:4%;
-  box-shadow: 0 2px 20px #cfd8dc;
+   box-shadow: 0 2px 20px #cfd8dc;
   }
 
 
@@ -216,81 +122,6 @@ model-viewer {
   visibility: hidden;
   transition: visibility 2s, opacity 1s 1s;
 }
-
-#playbutton{
-  color: white;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  bottom: 16px;
-  font-size: 16px;
-}
-
-/* End model viewer */
-
-/* Start Instructions */
-
-.Instructions{
-  padding-right: 10%;
-  padding-left: 10%; 
-  padding-bottom: 5%;
-  animation: 1s ease-out  fadeIn; 
-}
-
-.Instructions h2{
-  font-weight: 600;
-  font-size:36px;
-  color: #00bcd4;
-  padding-bottom: 5%;
-}
-
-
-
-/* Start Portal section*/
-
-#portal-animation{
-  padding-right: 10%;
-  padding-left: 10%; 
-  margin-top: 5%;
-}
-
-#portal{
-  width: 100%;
-  height: auto;
-  padding:4%;
-  box-shadow: 0 2px 20px #cfd8dc;
-  
-}
-
-.portal-button {
-  color: white;
-  position: sticky;
-  white-space: nowrap;
- transform: translateY(-200%);
-  font-size: 16px;
-}
-/* End Portal section*/
-
-/* Start Footer */
-.footeruL{
-  font-size:12px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1%;
-  height:auto;
-  background-color: #eceff1;
-}
-
-.footeruL .img-fluid{
-  display: block;
-margin-left: auto;
-margin-right: auto;
-size: 50%;
- 
-}
-  /* End Footer */
-
 
 
 
