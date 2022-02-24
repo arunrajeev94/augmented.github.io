@@ -51,7 +51,7 @@ html, body{
   
 }
 
-.Nav .active{
+.navbar .active{
   font-weight: 500;
 }
 
@@ -62,11 +62,10 @@ html, body{
 
 #Navlight :hover .active{
   color: #212121;
-  font-weight: 500;
 }
 
 #Navlight :hover{
-  color: #616161;
+  color: #424242;
 }
 
 .Hero  h1 {
