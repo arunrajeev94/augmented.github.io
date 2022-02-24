@@ -75,7 +75,7 @@ html, body{
   color: #AAF0FF;
 }
 #history .his_one{
-  background-color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0.12);
   font-weight: 400;
   color: #727272;
   border-radius: 12px;
