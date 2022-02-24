@@ -13,14 +13,14 @@ html, body{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: #646464;
+  color: #616161;
   
  }
 
  h1,h2,h3,h4{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#323232;
+  color:#424242;
   
  }
 
@@ -37,9 +37,6 @@ html, body{
   font-size: 20px;
 }
 
-#history{
-  color:#323232;
-}
 
 .Nav{
   font-weight: 400;
@@ -77,7 +74,7 @@ html, body{
 #history .his_one{
   background-color: #f5f5f5;
   font-weight: 400;
-  color: #727272;
+  color: #616161;
   border-radius: 12px;
   padding: 2rem;
 
