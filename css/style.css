@@ -14,7 +14,7 @@ html, body{
   font-weight: 400;
   font-size: 18px;
   color: #646464;
-  padding-bottom: 0px;
+  
   
  }
 
@@ -32,12 +32,10 @@ html, body{
 
 .Hero{
   background-image:url(../assets/bg_2.png);
-  min-height: 600px;
-  max-height: 800px;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 4rem;
+  font-size: 20px;
 }
 
 #history{
@@ -78,11 +76,11 @@ html, body{
   color: #AAF0FF;
 }
 #history .his_one{
-  background-color: #DBDDDD;
+  background-color: #e0e0e0;
   font-weight: 400;
   color: #727272;
   border-radius: 20px;
-  padding: 3rem;
+  padding: 2rem;
 
   }
 
